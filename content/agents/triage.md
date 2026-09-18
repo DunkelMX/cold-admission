@@ -5,7 +5,7 @@ status: active
 cover: "FEMA Field Medic / Physician"
 agency: "Federal Emergency Management Agency"
 portrait: triage.jpg
-player: Diego
+player: Diego K
 operations: ["01"]
 injuries:
   - "Left eye (dominant) — penetrating metal fragment, enucleated surgically"

@@ -5,7 +5,7 @@ status: active
 cover: "Import logistics consultant"
 agency: "[REDACTED:Yamaguchi-gumi — severed affiliation]"
 portrait: wraith.jpg
-player: Abel
+player: Abel M
 operations: ["01"]
 injuries: []
 bonds: []

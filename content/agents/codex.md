@@ -5,7 +5,7 @@ status: active
 cover: "Anthropologist — university faculty"
 agency: "[REDACTED:Smithsonian Institution — contract]"
 portrait: "codex2.jpg"
-player: Ramiro
+player: Ramiro T
 operations: ["01"]
 injuries:
   - "Bilateral otorrhagia, tympanic rupture — no identified acoustic cause"
