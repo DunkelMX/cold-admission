@@ -1,11 +1,11 @@
 ---
 codename: LEDGER
-legal_name: "[REDACTED:Marcus Oyelaran]"
+legal_name: "[REDACTED:Tomas Guerrero]"
 status: active
 npc: true
 cover: "Special Agent, IRS Criminal Investigation"
 agency: "Internal Revenue Service — Criminal Investigation Division"
-portrait:
+portrait: "Tom_ledger.jpg"
 player:
 operations: ["01"]
 injuries: []

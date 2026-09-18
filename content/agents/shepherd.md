@@ -1,11 +1,11 @@
 ---
 codename: SHEPHERD
-legal_name: "[REDACTED:George A. Voss]"
+legal_name: "[REDACTED:George Kanouse]"
 status: mia
 npc: true
 cover: "Team Lead"
 agency: "[REDACTED:U.S. Marshals Service]"
-portrait:
+portrait: "GeorgeKanouse.jpg"
 player:
 operations: ["01"]
 injuries:

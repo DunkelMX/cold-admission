@@ -1,11 +1,11 @@
 ---
 codename: DAEMON
-legal_name: "[REDACTED:Priya Raghunathan]"
+legal_name: "[REDACTED: Warren Bautista]"
 status: active
 npc: true
 cover: "Computer engineer — network security contractor"
 agency: "[REDACTED:contract, no agency of record]"
-portrait:
+portrait: "Warren.jpg"
 player:
 operations: ["01"]
 injuries: []
