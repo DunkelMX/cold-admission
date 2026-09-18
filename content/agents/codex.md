@@ -4,7 +4,7 @@ legal_name: "[REDACTED:Mr. William Hartnell]"
 status: active
 cover: "Anthropologist — university faculty"
 agency: "[REDACTED:Smithsonian Institution — contract]"
-portrait: "codex.jpg"
+portrait: "codex2.jpg"
 player:
 operations: ["01"]
 injuries:
