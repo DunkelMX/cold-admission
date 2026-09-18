@@ -5,7 +5,7 @@ status: active
 cover: "U.S. Secret Service Agent"
 agency: "United States Secret Service"
 portrait:
-player:
+player: Juan Pablo C
 operations: ["01"]
 injuries:
   - "Near-fall from the catwalk during the final engagement — arrested by SHEPHERD"
