@@ -25,7 +25,7 @@
         <dt>{{ t.status }}</dt><dd class="s-{{ page.status }}">{{ t['status_' ~ page.status] }}</dd>
         {% if page.player %}<dt>{{ t.player }}</dt><dd>{{ page.player }}</dd>{% endif %}
         <dt>{{ t.operations_served }}</dt>
-        <dd>{% for op in operations %}{% if op.number in page.operations %}<a href="{{ root }}operations/{{ op.slug }}/">{{ op.number }} · {{ op.title }}</a>{% endif %}{% endfor %}</dd>
+        <dd>{% if page.operations %}{% for op in operations %}{% if op.number in page.operations %}<a href="{{ root }}operations/{{ op.slug }}/">{{ op.number }} · {{ op.title }}</a>{% endif %}{% endfor %}{% else %}<span class="unk">{{ t.no_operations }}</span>{% endif %}</dd>
         <dt>{{ t.injuries }}</dt>
         <dd>{% if page.injuries %}<ul>{% for i in page.injuries %}<li>{{ i|redact }}</li>{% endfor %}</ul>{% else %}—{% endif %}</dd>
         <dt>{{ t.bonds }}</dt>

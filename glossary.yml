@@ -81,3 +81,16 @@ never_translate:
   - "Operation and campaign titles (Cold Admission stays Cold Admission)"
   - "Agent codenames: TRIAGE, SHEPHERD, BULWARK, CODEX, WRAITH"
   - "Thread level values: hot, warm, cold (these are structural keys, not prose)"
+
+# Contents of [REDACTED:...] markers, substituted mechanically by translate.py after
+# translation. Anything not listed here is passed through verbatim — which is correct
+# for personal names, organisations and codenames, and is reported so it can be added.
+redaction_terms:
+  aperture: "abertura"
+  the aperture: "la abertura"
+  entity: "entidad"
+  anomalous entity: "entidad anómala"
+  anomaly: "anomalía"
+  tentacle-like appendage: "apéndice similar a un tentáculo"
+  tentacle-like appendages: "apéndices similares a tentáculos"
+  an unmarked recovery room, no windows: "una sala de recuperación sin identificar, sin ventanas"

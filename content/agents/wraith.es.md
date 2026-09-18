@@ -1,6 +1,6 @@
 ---
 cover: Consultor de logística de importación
-agency: '[REDACTED:Yamaguchi-gumi — severed affiliation]'
+agency: '[REDACTED:Yamaguchi-gumi — afiliación disuelta]'
 source_sha: d91f31d33b96776f
 ---
 

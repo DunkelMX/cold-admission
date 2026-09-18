@@ -1,7 +1,8 @@
 ---
 codename: SHEPHERD
-legal_name: "[REDACTED:Gerald A. Voss]"
+legal_name: "[REDACTED:George A. Voss]"
 status: mia
+npc: true
 cover: "Team Lead"
 agency: "[REDACTED:U.S. Marshals Service]"
 portrait:

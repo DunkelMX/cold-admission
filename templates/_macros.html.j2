@@ -15,7 +15,7 @@
   <div class="plate-id">
     <span class="plate-code">{{ agent.codename }}</span>
     <span class="plate-cover">{{ agent.cover|redact }}</span>
-    <span class="plate-status s-{{ agent.status }}">{{ t['status_' ~ agent.status] }}</span>
+    <span class="plate-status s-{{ agent.status }}">{{ t['status_' ~ agent.status] }}{% if agent.npc %} <span class="npc-tag">{{ t.npc_tag }}</span>{% endif %}</span>
   </div>
 </a>
 {% endmacro %}

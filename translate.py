@@ -78,6 +78,27 @@ full of "seized", "grabbed", "took". Use sujetar, aferrar, atrapar, tomar, or ag
 Return ONLY the translated markdown. No preamble, no code fences, no commentary."""
 
 
+def map_redactions(text, terms):
+    """Rewrite [REDACTED:x] contents through the glossary map.
+
+    The model reverts to copying these verbatim no matter how the rule is worded, so
+    the substitution is done here instead. Unmapped contents pass through (correct for
+    names) and are returned so the caller can surface them.
+    """
+    lookup = {k.lower(): v for k, v in (terms or {}).items()}
+    unmapped = []
+
+    def sub(m):
+        inner = m.group(1)
+        hit = lookup.get(inner.strip().lower())
+        if hit:
+            return f"[REDACTED:{hit}]"
+        unmapped.append(inner)
+        return m.group(0)
+
+    return re.sub(r"\[REDACTED:([^\]]+)\]", sub, text), unmapped
+
+
 def check_banned(text, banned):
     lowered = text.lower()
     return [w for w in banned if re.search(rf"\b{re.escape(w.lower())}\b", lowered)]
@@ -151,6 +172,11 @@ def main():
             if hits:
                 print(f"  STILL uses {hits} — not written", file=sys.stderr)
                 continue
+
+        out, unmapped = map_redactions(out, glossary.get("redaction_terms"))
+        for u in sorted(set(unmapped)):
+            print(f"  redaction passed through untranslated: {u!r} "
+                  f"(add to glossary.yml redaction_terms if it should be Spanish)")
 
         if heading_count(out) != heading_count(body):
             print(f"  heading count {heading_count(out)} != {heading_count(body)} "

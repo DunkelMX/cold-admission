@@ -3,12 +3,12 @@ number: "01"
 title: Gutter Key
 tagline: "Every building has a way in from underneath."
 date: "[DATE]"
-location: "[REDACTED]"
+location: "[REDACTED:Ashtabula, Ohio]"
 status: closed
 outcome: "Ritual disrupted. Team lead lost."
 reporting_agent: TRIAGE
 keyart: 01-gutter-key.jpg
-roster: [triage, shepherd, bulwark, codex, wraith]
+roster: [triage, shepherd, bulwark, codex, wraith, daemon, ledger]
 casualties: [shepherd]
 threads:
   - level: hot
@@ -39,7 +39,9 @@ The unit stands down effective upon filing of this report.
 
 ## 1. Engagement Sequence
 
-The target was a plastic injection molding facility operating as a shell company. The unit entered through a disused sewer access.
+The target was a plastic injection molding facility operating as a shell company. Agent LEDGER identified it from the company's accounts weeks before we moved, having found invoices for resin volumes the plant's own output could not account for.
+
+The unit entered through a disused sewer access. Agent DAEMON held the facility's camera system throughout and cycled the rear door locks as we reached them; without that we would have breached a wall or not gone in at all. Neither agent was on site.
 
 Chanting was audible on surfacing. Agent CODEX reacted to it almost immediately (Section 4). I treated him on site, and the unit separated shortly afterward. Operators engaged largely in isolation from that point on.
 
@@ -117,7 +119,7 @@ I sustained a knife wound to the right arm, near the shoulder, while disarming a
 
 During withdrawal to the extraction point, Agent WRAITH and I were pursued by two hostile personnel. I fell. With rounds striking the surrounding machinery, I was hit in the left eye by a metal fragment and incapacitated. I have no reliable memory of what followed.
 
-I was not among the operators initially extracted. I do not know who recovered me or how. My next clear memory is waking in [REDACTED], where I was informed that the eye could not be saved and had been surgically removed. No one present was able or willing to tell me how I arrived there. I request that the extraction record be made available to me.
+I was not among the operators initially extracted. I do not know who recovered me or how. My next clear memory is waking in [REDACTED:an unmarked recovery room, no windows], where I was informed that the eye could not be saved and had been surgically removed. No one present was able or willing to tell me how I arrived there. I request that the extraction record be made available to me.
 
 In the absence of that record, I can only consider the possibilities.
 

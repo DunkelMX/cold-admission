@@ -2,11 +2,21 @@
 {% from "_macros.html.j2" import plate %}
 {% block title %}{{ t.roster_title }} — {{ t.site_title }}{% endblock %}
 {% block content %}
+{% set players = agents | rejectattr('npc', 'defined') | list %}
+{% set npcs    = agents | selectattr('npc', 'defined') | list %}
 <section class="wrap">
-  <h1 class="sec">{{ t.roster_title }}</h1>
+  <h1 class="sec">{{ t.roster_players }}</h1>
   <p class="sec-intro">{{ t.roster_intro }}</p>
   <div class="plates">
-    {% for a in agents %}{{ plate(a, t, site_root, root) }}{% endfor %}
+    {% for a in players %}{{ plate(a, t, site_root, root) }}{% endfor %}
   </div>
+
+  {% if npcs %}
+  <h2 class="sec">{{ t.roster_npcs }}</h2>
+  <p class="sec-intro">{{ t.roster_npcs_intro }}</p>
+  <div class="plates">
+    {% for a in npcs %}{{ plate(a, t, site_root, root) }}{% endfor %}
+  </div>
+  {% endif %}
 </section>
 {% endblock %}
