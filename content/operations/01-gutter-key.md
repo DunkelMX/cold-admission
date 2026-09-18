@@ -1,11 +1,13 @@
 ---
 number: "01"
 title: Gutter Key
+tagline: "Every building has a way in from underneath."
 date: "[DATE]"
 location: "[REDACTED]"
 status: closed
 outcome: "Ritual disrupted. Team lead lost."
 reporting_agent: TRIAGE
+keyart: 01-gutter-key.jpg
 roster: [triage, shepherd, bulwark, codex, wraith]
 casualties: [shepherd]
 threads:
@@ -20,16 +22,16 @@ threads:
   - level: warm
     text: "The unresolved conflict between TRIAGE and BULWARK, to be addressed before they operate together again."
   - level: cold
-    text: "Provenance of the sacrificial dagger and the incense, and whether either is itself unnatural."
+    text: "Provenance of the sacrificial dagger and the incense, and whether either is itself paranormal."
   - level: cold
-    text: "What lies on the far side of the aperture, and the scale of what reached through it."
+    text: "What lies on the far side of the [REDACTED:aperture], and the scale of what reached through it."
 ---
 
 ## Operational Summary
 
 The ritual was disrupted and the primary threat neutralized. The unit did not return intact.
 
-Agent SHEPHERD, team lead, was lost during the final engagement when an anomalous entity seized him and pulled him through [REDACTED]. Recovery was not possible. His final actions prevented a second fatality. Posthumous recognition is recommended (Section 2).
+Agent SHEPHERD, team lead, was lost during the final engagement when an [REDACTED:anomalous entity] seized him and pulled him through [REDACTED:the aperture]. Recovery was not possible. His final actions prevented a second fatality. Posthumous recognition is recommended (Section 2).
 
 The team fragmented immediately after insertion and fought most of the engagement in isolation. Surviving operators sustained injuries, equipment losses, and anomalous exposure. Individual assessments follow.
 
@@ -63,7 +65,7 @@ When I moved to engage a ritual participant, Agent SHEPHERD had to choose betwee
 
 He chose Agent BULWARK. He caught him before the fall and pulled him back onto the catwalk, preventing what could reasonably have been a second fatality.
 
-The two then repositioned using a suspended chain and continued firing on the remaining ritual participants and the entity emerging through [REDACTED]. This brought Agent SHEPHERD into close proximity with the anomaly. A tentacle-like appendage reached through [REDACTED], seized him, and pulled him through.
+The two then repositioned using a suspended chain and continued firing on the remaining ritual participants and the [REDACTED:entity] emerging through [REDACTED:the aperture]. This brought Agent SHEPHERD into close proximity with the [REDACTED:anomaly]. A [REDACTED:tentacle-like appendage] reached through [REDACTED:the aperture], seized him, and pulled him through.
 
 Status: missing, presumed killed in action. No remains recovered.
 
@@ -79,7 +81,7 @@ Agent BULWARK maintained an exceptionally aggressive focus on the primary object
 
 That focus produced results. He neutralized one ritual participant, activated the sprinkler system, and with Agent SHEPHERD neutralized the remaining two, directly ending the ritual.
 
-It also came at the expense of force protection. He declined my request for supporting fire while Agent WRAITH was pinned in close combat. Later, while I was withdrawing from two guards, he deployed a flashbang through [REDACTED], apparently to test its effect on the anomaly rather than against the personnel pursuing me.
+It also came at the expense of force protection. He declined my request for supporting fire while Agent WRAITH was pinned in close combat. Later, while I was withdrawing from two guards, he deployed a flashbang through [REDACTED:the aperture], apparently to test its effect on the [REDACTED:anomaly] rather than against the personnel pursuing me.
 
 I do not question his commitment or his effectiveness against the primary threat. My concern is target fixation, and the point at which pursuit of the objective outweighs reasonable opportunities to protect other members of the unit.
 
@@ -129,13 +131,13 @@ The loss is of my dominant eye. Depth perception, target acquisition, and fine p
 
 The stand-down period will be used to adapt: monocular retraining for clinical procedures, and firearms and close-quarters instruction I should have pursued before this operation, not after it.
 
-## 7. Unnatural Phenomena
+## 7. Paranormal Phenomena
 
-A portal-like aperture, [REDACTED], was present above the ritual area for the duration of the engagement. No entity fully emerged. Multiple tentacle-like appendages were observed extending through it. Their scale suggests the source was substantially larger than the aperture.
+A portal-like [REDACTED:aperture] was present above the ritual area for the duration of the engagement. No [REDACTED:entity] fully emerged. Multiple [REDACTED:tentacle-like appendages] were observed extending through it. Their scale suggests the source was substantially larger than the [REDACTED:aperture].
 
-A flashbang deployed through the aperture did not detonate. There was no report and no light. It was not seen again.
+A flashbang deployed through the [REDACTED:aperture] did not detonate. There was no report and no light. It was not seen again.
 
-The chanting was a Latin invocation with heretical and demonological content. Its purpose, to summon the entity, was apparent to the unit only in retrospect. Exposure produced severe physiological effects in at least one operator (Section 4).
+The chanting was a Latin invocation with heretical and demonological content. Its purpose, to summon the [REDACTED:entity], was apparent to the unit only in retrospect. Exposure produced severe physiological effects in at least one operator (Section 4).
 
 Recommendations:
 

@@ -24,7 +24,7 @@ terms:
   engagement: "enfrentamiento"
   the unit stands down: "la unidad queda desactivada"
   force protection: "protección del personal"
-  The Unnatural: "Lo Paranormal"
+  The Paranormal: "Lo Paranormal"
   Sanity: "Cordura"
   Bonds: "Vínculos"
   Disorders: "Trastornos"
@@ -52,7 +52,8 @@ rules:
   - "Keep clinical vocabulary clinical and precise: otorragia bilateral, pupilas isocóricas y reactivas, haloperidol 2 mg IM, herida penetrante, membrana timpánica."
   - "Military register: clipped, declarative, no literary flourish. This is a report, not prose."
   - "Preserve every markdown structure exactly: heading levels and text positions, list markers, bold/italic, blank lines."
-  - "Never translate or alter [REDACTED] / [REDACTED:Name] markers — copy them through byte-for-byte, including the name inside the colon form."
+  - "Bare [REDACTED] markers: copy through byte-for-byte, always."
+  - "[REDACTED:text] markers: keep the marker shape exactly, and translate the text inside ONLY when it is a common noun (aperture, entity, appendage). NEVER translate a personal name, an organisation, or a codename — those stay verbatim."
   - "Codenames (TRIAGE, SHEPHERD, BULWARK, CODEX, WRAITH) are never translated."
 
 banned:

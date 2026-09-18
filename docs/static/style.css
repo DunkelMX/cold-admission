@@ -173,16 +173,31 @@ h1.sec { font-size: 22px; margin-top: 8px; }
   color: rgba(35,33,28,.75); display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
 }
 
-/* ---- redaction ---- */
+/* ---- redaction ----
+   Two classes. A permanent bar is an empty span with nothing to expose. A revealable
+   one holds real text painted the colour of its own background, so it can be selected,
+   hovered or clicked open — the way a badly redacted document gives itself up. */
 .redacted {
-  display: inline-block; background: #12120f; color: transparent;
-  min-width: 5.5em; height: 1.05em; vertical-align: -.16em; border-radius: 1px;
+  display: inline-block; background: #12120f; border-radius: 1px;
+  color: transparent; vertical-align: -.16em;
 }
-.redacted.revealable { cursor: pointer; min-width: 0; padding: 0 .35em; transition: background .12s, color .12s; }
-.redacted.revealable:hover { background: #2a2a22; }
-.redacted.revealable .redacted-text { visibility: hidden; }
-.redacted.revealable.shown { background: rgba(168,59,42,.16); color: var(--rule); box-shadow: inset 0 -1px 0 var(--rule); }
-.redacted.revealable.shown .redacted-text { visibility: visible; }
+.redacted:empty { min-width: 5.5em; height: 1.05em; }
+.redacted.revealable {
+  cursor: pointer; padding: 0 .3em; min-width: 0;
+  color: #12120f; -webkit-text-fill-color: #12120f;
+  transition: background .12s, color .12s;
+}
+.redacted.revealable::selection,
+.redacted.revealable ::selection {
+  background: var(--amber); color: var(--ink); -webkit-text-fill-color: var(--ink);
+}
+.redacted.revealable:hover,
+.redacted.revealable:focus-visible,
+.redacted.revealable.shown {
+  background: rgba(168,59,42,.16); color: var(--rule);
+  -webkit-text-fill-color: var(--rule); box-shadow: inset 0 -1px 0 var(--rule);
+}
+.redacted.revealable:focus-visible { outline: 1px solid var(--amber); outline-offset: 1px; }
 
 /* ---- stamps ---- */
 .stamp {

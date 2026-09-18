@@ -1,4 +1,5 @@
 ---
+tagline: Todo edificio tiene una entrada por abajo.
 outcome: Ritual interrumpido. Jefe de Equipo perdido.
 threads:
 - level: hot
@@ -19,16 +20,16 @@ threads:
   text: Procedencia de la daga sacrificial y del incienso, y si alguno de los dos
     es en sí mismo paranormal.
 - level: cold
-  text: Qué hay del otro lado de la abertura, y la magnitud de aquello que alcanzó
-    a cruzarla.
-source_sha: e4493b8c9cc15c67
+  text: Qué hay del otro lado de la [REDACTED:abertura], y la magnitud de aquello
+    que alcanzó a cruzarla.
+source_sha: 09cd6ce8cdd22c66
 ---
 
 ## Resumen Operativo
 
 El ritual fue interrumpido y la amenaza principal quedó neutralizada. La unidad no regresó íntegra.
 
-El Agente SHEPHERD, jefe de equipo, se perdió durante el enfrentamiento final cuando una entidad anómala lo sujetó y lo arrastró a través de [REDACTED]. La recuperación no fue posible. Sus acciones finales evitaron una segunda fatalidad. Se recomienda reconocimiento póstumo (Sección 2).
+El Agente SHEPHERD, jefe de equipo, se perdió durante el enfrentamiento final cuando una [REDACTED:entidad anómala] lo sujetó y lo arrastró a través de [REDACTED:la abertura]. La recuperación no fue posible. Sus acciones finales evitaron una segunda fatalidad. Se recomienda reconocimiento póstumo (Sección 2).
 
 El equipo se fragmentó inmediatamente después de la inserción y libró la mayor parte del enfrentamiento en aislamiento. Los operadores sobrevivientes sufrieron lesiones, pérdidas de equipo y exposición anómala. A continuación, las evaluaciones individuales.
 
@@ -62,7 +63,7 @@ Cuando avancé para enfrentar a una participante del ritual, el Agente SHEPHERD 
 
 Eligió al Agente BULWARK. Lo atrapó antes de la caída y lo jaló de vuelta a la pasarela, evitando lo que razonablemente habría sido una segunda fatalidad.
 
-Ambos se reposicionaron luego usando una cadena suspendida y continuaron disparando contra los participantes del ritual restantes y contra la entidad que emergía por [REDACTED]. Esto puso al Agente SHEPHERD en proximidad cercana con la anomalía. Un apéndice similar a un tentáculo se extendió por [REDACTED], lo sujetó y lo arrastró al otro lado.
+Ambos se reposicionaron luego usando una cadena suspendida y continuaron disparando contra los participantes del ritual restantes y contra la [REDACTED:entidad] que emergía por [REDACTED:la abertura]. Esto puso al Agente SHEPHERD en proximidad cercana con la [REDACTED:anomalía]. Un [REDACTED:apéndice similar a un tentáculo] se extendió por [REDACTED:la abertura], lo sujetó y lo arrastró al otro lado.
 
 Estado: desaparecido, presunto MUERTO EN ACCIÓN. No se recuperaron restos.
 
@@ -78,7 +79,7 @@ El Agente BULWARK mantuvo un enfoque excepcionalmente agresivo sobre el objetivo
 
 Ese enfoque dio resultados. Neutralizó a un participante del ritual, activó el sistema de rociadores y, junto con el Agente SHEPHERD, neutralizó a los dos restantes, poniendo fin directo al ritual.
 
-También fue a costa de la protección del personal. Rechazó mi solicitud de fuego de apoyo mientras el Agente WRAITH estaba trabado en combate cuerpo a cuerpo. Después, mientras yo me replegaba de dos guardias, lanzó una granada cegadora a través de [REDACTED], al parecer para probar su efecto sobre la anomalía y no contra el personal que me perseguía.
+También fue a costa de la protección del personal. Rechazó mi solicitud de fuego de apoyo mientras el Agente WRAITH estaba trabado en combate cuerpo a cuerpo. Después, mientras yo me replegaba de dos guardias, lanzó una granada cegadora a través de [REDACTED:la abertura], al parecer para probar su efecto sobre la [REDACTED:anomalía] y no contra el personal que me perseguía.
 
 No cuestiono su compromiso ni su eficacia contra la amenaza principal. Mi preocupación es la fijación en el objetivo, y el punto en que la persecución de la meta pesa más que las oportunidades razonables de proteger a otros miembros de la unidad.
 
@@ -130,11 +131,11 @@ El periodo de desactivación se usará para adaptarme: reentrenamiento monocular
 
 ## 7. Fenómenos Paranormales
 
-Una abertura de tipo portal, [REDACTED], estuvo presente sobre el área del ritual durante todo el enfrentamiento. Ninguna entidad emergió por completo. Se observaron múltiples apéndices similares a tentáculos extendiéndose a través de ella. Su escala sugiere que la fuente era sustancialmente mayor que la abertura.
+Una [REDACTED:abertura] de tipo portal estuvo presente sobre el área del ritual durante todo el enfrentamiento. Ninguna [REDACTED:entidad] emergió por completo. Se observaron múltiples [REDACTED:apéndices similares a tentáculos] extendiéndose a través de ella. Su escala sugiere que la fuente era sustancialmente mayor que la [REDACTED:abertura].
 
-Una granada cegadora lanzada a través de la abertura no detonó. No hubo estruendo ni luz. No se volvió a ver.
+Una granada cegadora lanzada a través de la [REDACTED:abertura] no detonó. No hubo estruendo ni luz. No se volvió a ver.
 
-Los cantos eran una invocación en latín con contenido herético y demonológico. Su propósito, invocar a la entidad, fue evidente para la unidad solo en retrospectiva. La exposición produjo efectos fisiológicos severos en al menos un operador (Sección 4).
+Los cantos eran una invocación en latín con contenido herético y demonológico. Su propósito, invocar a la [REDACTED:entidad], fue evidente para la unidad solo en retrospectiva. La exposición produjo efectos fisiológicos severos en al menos un operador (Sección 4).
 
 Recomendaciones:
 

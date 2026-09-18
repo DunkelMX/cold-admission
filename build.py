@@ -42,7 +42,7 @@ def split_frontmatter(text):
 def redact(html):
     html = RE_REVEAL.sub(
         lambda m: f'<span class="redacted revealable" tabindex="0" role="button">'
-        f'<span class="redacted-text">{m.group(1)}</span></span>',
+        f'{m.group(1)}</span>',
         html,
     )
     return RE_BAR.sub('<span class="redacted"></span>', html)
