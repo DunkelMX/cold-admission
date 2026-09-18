@@ -18,7 +18,7 @@ Protective detail before the Program, and it shows in everything except the part
 should matter most. He is disciplined, physically fearless, and reliably the first
 operator to reach the objective.
 
-On Cold Admission he neutralized one ritual participant from the catwalk, triggered the
+On Gutter Key he neutralized one ritual participant from the catwalk, triggered the
 sprinkler system that extinguished the ritual candles, and with the team lead ended the
 remaining two. The ritual failed because of what he did. That is not in dispute and the
 reporting agent does not dispute it.

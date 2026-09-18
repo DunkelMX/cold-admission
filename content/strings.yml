@@ -1,5 +1,5 @@
 en:
-  site_title: "Operation Cold Admission"
+  site_title: "Cold Admission"
   subtitle: "A Delta Green Adventure"
   classification: "// TOP SECRET // NOFORN // DELTA GREEN //"
   nav_cover: "Cover Sheet"
@@ -49,7 +49,7 @@ en:
   reveal_hint: "Click a black bar to reveal what is under it."
 
 es:
-  site_title: "Operación Cold Admission"
+  site_title: "Cold Admission"
   subtitle: "Una aventura de Delta Green"
   classification: "// MÁXIMO SECRETO // SIN DIFUSIÓN EXTERNA // DELTA GREEN //"
   nav_cover: "Portada"

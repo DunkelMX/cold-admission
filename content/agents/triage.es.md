@@ -4,7 +4,7 @@ agency: Agencia Federal para el Manejo de Emergencias
 injuries:
 - Ojo izquierdo (dominante) — fragmento metálico penetrante, enucleado quirúrgicamente
 - Herida por arma blanca, brazo derecho cerca del hombro — función preservada
-source_sha: afde8e7fd798b299
+source_sha: 522b362abbcab67c
 ---
 
 Médico de urgencias por formación, respuesta a desastres por carrera. Diez años rotando
@@ -21,7 +21,7 @@ valía la pena reclutarlo: un hombre que documenta lo que ve, incluidas las part
 lo dejan mal parado.
 
 Operativamente es apoyo. No es tirador y nunca ha fingido serlo —
-posición que Cold Admission le corrigió a cierto costo. Su valor es que gente que
+posición que Gutter Key le corrigió a cierto costo. Su valor es que gente que
 debió morir bajo su cuidado no murió, y que dirá con claridad qué pasó con
 los que sí.
 

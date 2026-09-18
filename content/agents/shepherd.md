@@ -18,7 +18,7 @@ Team lead. Twenty-two years of federal service before the Program, most of it sp
 bringing people in who did not want to come.
 
 Ran the cell the way he ran a fugitive task force — brief everyone, keep the radio
-open, be the last one out. The record of Cold Admission suggests he had not adjusted
+open, be the last one out. The record of Gutter Key suggests he had not adjusted
 that doctrine to an environment where the radio does not stay open and the last one out
 may not be a survivor.
 

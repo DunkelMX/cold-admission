@@ -24,7 +24,7 @@ that arrangement are not in this file.
 
 On operations he is the one who is already inside. He does not wait for the plan to
 resolve and he does not report his position. This is the source of both his value and
-the incident in Section 5 of the Cold Admission report.
+the incident in Section 5 of the Gutter Key report.
 
 He is honest to the point of injury. Asked whether he had abandoned a wounded operator
 at the extraction point, he said yes, without qualification, and did not offer a reason

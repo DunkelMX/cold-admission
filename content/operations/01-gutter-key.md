@@ -1,13 +1,11 @@
 ---
 number: "01"
-title: Cold Admission
-tagline: "Some hospitals keep records. Some keep debts."
+title: Gutter Key
 date: "[DATE]"
 location: "[REDACTED]"
 status: closed
 outcome: "Ritual disrupted. Team lead lost."
 reporting_agent: TRIAGE
-keyart: 01-cold-admission.jpg
 roster: [triage, shepherd, bulwark, codex, wraith]
 casualties: [shepherd]
 threads:

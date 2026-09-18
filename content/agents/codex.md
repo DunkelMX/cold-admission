@@ -19,7 +19,7 @@ Academic. Ritual practice, comparative liturgy, and the specific problem of dead
 languages that are not as dead as the literature holds. Consulted for the Program
 before being read into it, which is the usual order of things and rarely a happy one.
 
-Cold Admission established something the cell would rather not have learned: the
+Gutter Key established something the cell would rather not have learned: the
 hazard was not the sound. CODEX began to deteriorate at the point of understanding.
 Bilateral otorrhagia presented with no pressure event, no blast, and no acoustic source
 sufficient to explain it. The mechanism appears to have been comprehension.

@@ -4,7 +4,7 @@ agency: '[REDACTED:Smithsonian Institution — contract]'
 injuries:
 - Otorragia bilateral, ruptura timpánica — sin causa acústica identificada
 - Pérdida auditiva parcial, audiología de seguimiento pendiente
-source_sha: 7292fa4bdb6e5df5
+source_sha: 5cb60f429597cc22
 ---
 
 Académico. Práctica ritual, liturgia comparada y el problema específico de las lenguas
@@ -12,7 +12,7 @@ muertas que no están tan muertas como sostiene la literatura. Consultado por el
 antes de ser informado sobre él, que es el orden habitual de las cosas y rara vez uno
 afortunado.
 
-Cold Admission estableció algo que la célula habría preferido no aprender: el
+Gutter Key estableció algo que la célula habría preferido no aprender: el
 peligro no era el sonido. CODEX empezó a deteriorarse en el punto de la comprensión.
 Presentó otorragia bilateral sin evento de presión, sin onda explosiva y sin fuente acústica
 suficiente para explicarla. El mecanismo parece haber sido el entendimiento.

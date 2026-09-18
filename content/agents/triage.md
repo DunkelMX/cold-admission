@@ -29,7 +29,7 @@ was worth recruiting: a man who documents what he sees, including the parts that
 reflect badly on him.
 
 Operationally he is support. He is not a shooter and has never pretended otherwise —
-a position Cold Admission revised for him at some cost. His value is that people who
+a position Gutter Key revised for him at some cost. His value is that people who
 should have died on his watch have not, and that he will say plainly what happened to
 the ones who did.
 

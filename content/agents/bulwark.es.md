@@ -4,14 +4,14 @@ agency: Servicio Secreto de los Estados Unidos
 injuries:
 - Caída casi consumada desde la pasarela durante el enfrentamiento final — detenida
   por SHEPHERD
-source_sha: fd0d2bf3365c09d4
+source_sha: 1daa1629780098fe
 ---
 
 Escolta de protección antes del Programa, y se le nota en todo excepto en la parte que
 debería importar más. Es disciplinado, físicamente intrépido y, de forma confiable, el primer
 operador en llegar al objetivo.
 
-En Cold Admission neutralizó a un participante del ritual desde la pasarela, activó el
+En Gutter Key neutralizó a un participante del ritual desde la pasarela, activó el
 sistema de rociadores que extinguió las velas del ritual y, junto con el Jefe de Equipo, acabó con los
 dos restantes. El ritual falló por lo que él hizo. Eso no está en discusión y el
 agente informante no lo discute.

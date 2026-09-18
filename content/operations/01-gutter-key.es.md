@@ -1,5 +1,4 @@
 ---
-tagline: Algunos hospitales llevan registros. Otros llevan deudas.
 outcome: Ritual interrumpido. Jefe de Equipo perdido.
 threads:
 - level: hot

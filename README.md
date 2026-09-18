@@ -6,7 +6,7 @@ in English and Mexican Spanish. Static site, published with GitHub Pages from `d
 ## Adding a session
 
 1. Write the after-action report as markdown in `content/operations/NN-slug.md`
-   (frontmatter + the report body — copy `01-cold-admission.md` as the shape).
+   (frontmatter + the report body — copy `01-gutter-key.md` as the shape).
 2. `uv run translate.py` — writes the `.es.md` siblings. Skips anything unchanged.
 3. `uv run build.py` — regenerates `docs/`.
 4. Commit and push. Pages serves the new version.
