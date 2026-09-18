@@ -1,0 +1,57 @@
+{% extends "base.html.j2" %}
+{% from "_macros.html.j2" import plate, threadlist, untranslated_bar %}
+{% block title %}{{ page.title }} — {{ t.site_title }}{% endblock %}
+{% block content %}
+
+<section class="wrap">
+  <div class="cover-grid op-head">
+    {% if page.keyart %}
+    <figure class="poster">
+      <img src="{{ site_root }}assets/keyart/{{ page.keyart }}" alt="{{ page.title }}">
+    </figure>
+    {% endif %}
+    <div class="cover-side">
+      <span class="opnum">{{ t.op_label }} {{ page.number }}</span>
+      <h1 class="cover-title">{{ page.title }}</h1>
+      {% if page.tagline %}<p class="cover-tag">{{ page.tagline }}</p>{% endif %}
+    </div>
+  </div>
+
+  <div class="statline">
+    <div><span class="k">{{ t.op_date }}</span><span class="v">{{ page.date|redact }}</span></div>
+    <div><span class="k">{{ t.op_location }}</span><span class="v">{{ page.location|redact }}</span></div>
+    <div><span class="k">{{ t.status }}</span><span class="v">{{ t['op_' ~ page.status] }}</span></div>
+    <div><span class="k">{{ t.op_outcome }}</span><span class="v">{{ page.outcome|redact }}</span></div>
+  </div>
+
+  <h2 class="sec">{{ t.op_roster }}</h2>
+  <div class="plates">
+    {% for a in roster %}{{ plate(a, t, site_root, root) }}{% endfor %}
+  </div>
+
+  <article class="doc report">
+    {{ untranslated_bar(untranslated, t) }}
+    <div class="doc-head">
+      <span>{{ t.classification }}</span>
+      <span>{{ t.op_label }} {{ page.number }} · {{ page.reporting_agent }}</span>
+    </div>
+    {{ body|safe }}
+  </article>
+
+  {% if page.maps %}
+  <h2 class="sec">{{ t.maps_title }}</h2>
+  <div class="maps">
+    {% for m in page.maps %}
+    <a href="{{ site_root }}assets/maps/{{ page.slug }}/{{ m }}">
+      <img src="{{ site_root }}assets/maps/{{ page.slug }}/{{ m }}" alt="{{ m }}" loading="lazy">
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if page.threads %}
+  <h2 class="sec">{{ t.threads_title }}</h2>
+  {{ threadlist(threads|selectattr('op', 'equalto', page.slug)|list, t, root) }}
+  {% endif %}
+</section>
+{% endblock %}

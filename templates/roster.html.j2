@@ -1,0 +1,12 @@
+{% extends "base.html.j2" %}
+{% from "_macros.html.j2" import plate %}
+{% block title %}{{ t.roster_title }} — {{ t.site_title }}{% endblock %}
+{% block content %}
+<section class="wrap">
+  <h1 class="sec">{{ t.roster_title }}</h1>
+  <p class="sec-intro">{{ t.roster_intro }}</p>
+  <div class="plates">
+    {% for a in agents %}{{ plate(a, t, site_root, root) }}{% endfor %}
+  </div>
+</section>
+{% endblock %}

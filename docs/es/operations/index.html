@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archivo de Operaciones — Operación Cold Admission</title>
+<meta name="description" content="Una aventura de Delta Green">
+<link rel="icon" href="../../assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../static/style.css">
+<link rel="alternate" hreflang="es-MX" href="./">
+<link rel="alternate" hreflang="en" href="../../operations/">
+</head>
+<body>
+<div class="banner">// MÁXIMO SECRETO // SIN DIFUSIÓN EXTERNA // DELTA GREEN //</div>
+
+<header class="chrome">
+  <a class="brand" href="../index.html">
+    <span class="brand-op">Operación Cold Admission</span>
+    <span class="brand-sub">Una aventura de Delta Green</span>
+  </a>
+  <nav>
+    <a href="../index.html">Portada</a>
+    <a href="../agents/">Personal</a>
+    <a href="../operations/">Operaciones</a>
+    <span class="langs">
+<a href="../../operations/" hreflang="en">EN</a> <span class="on">ES</span>    </span>
+  </nav>
+</header>
+
+<main>
+<section class="wrap">
+  <h1 class="sec">Archivo de Operaciones</h1>
+  <p class="sec-intro">Informes post-acción presentados, del más reciente al más antiguo.</p>
+  <div class="oplist">
+    <a class="opcard" href="../operations/01-cold-admission/">
+<img src="../../assets/keyart/01-cold-admission.jpg" alt="" loading="lazy">      <div class="opcard-body">
+        <span class="opnum">Operación 01</span>
+        <h2>Cold Admission</h2>
+        <p class="opout">Ritual interrumpido. Jefe de Equipo perdido.</p>
+        <span class="opstatus">Cerrada</span>
+      </div>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Registros de la célula. Compilados por los operadores sobrevivientes. Sin autoridad supervisora.</p>
+  <p class="hint">Haz clic en una barra negra para revelar lo que hay debajo.</p>
+</footer>
+<div class="banner">// MÁXIMO SECRETO // SIN DIFUSIÓN EXTERNA // DELTA GREEN //</div>
+
+<script>
+document.addEventListener('click', e => {
+  const el = e.target.closest('.revealable');
+  if (el) el.classList.toggle('shown');
+});
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('revealable')) {
+    e.preventDefault(); e.target.classList.toggle('shown');
+  }
+});
+</script>
+</body>
+</html>

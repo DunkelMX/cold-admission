@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BULWARK — Operation Cold Admission</title>
+<meta name="description" content="A Delta Green Adventure">
+<link rel="icon" href="../../assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../static/style.css">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="es-MX" href="../../es/agents/bulwark/">
+</head>
+<body>
+<div class="banner">// TOP SECRET // NOFORN // DELTA GREEN //</div>
+
+<header class="chrome">
+  <a class="brand" href="../../index.html">
+    <span class="brand-op">Operation Cold Admission</span>
+    <span class="brand-sub">A Delta Green Adventure</span>
+  </a>
+  <nav>
+    <a href="../../index.html">Cover Sheet</a>
+    <a href="../../agents/">Roster</a>
+    <a href="../../operations/">Operations</a>
+    <span class="langs">
+<span class="on">EN</span> <a href="../../es/agents/bulwark/" hreflang="es-MX">ES</a>
+    </span>
+  </nav>
+</header>
+
+<main>
+<section class="wrap dossier">
+  <div class="dossier-head">
+    <div class="plate-img big status-active">
+      <div class="no-photo"><span>Photo withheld</span></div>
+      <span class="regmark tl"></span><span class="regmark tr"></span>
+      <span class="regmark bl"></span><span class="regmark br"></span>
+    </div>
+
+    <div class="dossier-meta">
+      <h1>BULWARK</h1>
+      <dl>
+        <dt>Legal name</dt><dd><span class="redacted revealable" tabindex="0" role="button"><span class="redacted-text">Daniel Okonkwo</span></span></dd>
+        <dt>Cover identity</dt><dd>U.S. Secret Service Agent — United States Secret Service</dd>
+        <dt>Status</dt><dd class="s-active">Active</dd>
+        <dt>Operations served</dt>
+        <dd><a href="../../operations/01-cold-admission/">01 · Cold Admission</a></dd>
+        <dt>Injuries</dt>
+        <dd><ul><li>Near-fall from the catwalk during the final engagement — arrested by SHEPHERD</li></ul></dd>
+        <dt>Bonds</dt>
+        <dd><span class="unk">Unknown — pending agent sheet</span></dd>
+        <dt>Disorders</dt>
+        <dd><span class="unk">Unknown — pending agent sheet</span></dd>
+      </dl>
+    </div>
+  </div>
+
+  <article class="doc is-provisional">
+    <p class="provisional-note"><span class="stamp stamp-prov">Provisional</span>Provisional record. Compiled from after-action reporting pending confirmation by the agent.</p>
+    
+    <h2>Background</h2>
+    <p>Protective detail before the Program, and it shows in everything except the part that
+should matter most. He is disciplined, physically fearless, and reliably the first
+operator to reach the objective.</p>
+<p>On Cold Admission he neutralized one ritual participant from the catwalk, triggered the
+sprinkler system that extinguished the ritual candles, and with the team lead ended the
+remaining two. The ritual failed because of what he did. That is not in dispute and the
+reporting agent does not dispute it.</p>
+<p>What is in the file is the cost of that focus: a declined request for supporting fire
+while another operator was pinned in close combat, and a flashbang spent on the anomaly
+rather than on the two hostiles pursuing a wounded teammate. The report names this
+target fixation and stops short of naming anything else.</p>
+<p>There is unresolved conflict between BULWARK and TRIAGE dating to a previous operation.
+Neither has put the substance of it in writing. The reporting agent has flagged it as
+requiring resolution before the two operate together again, and has also flagged that
+his own reading of BULWARK's conduct may be coloured by it.</p>
+<p>He may or may not have carried TRIAGE out of that factory. He has not said.</p>
+  </article>
+</section>
+</main>
+
+<footer>
+  <p>Cell records. Compiled by the surviving operators. No supervising authority.</p>
+  <p class="hint">Click a black bar to reveal what is under it.</p>
+</footer>
+<div class="banner">// TOP SECRET // NOFORN // DELTA GREEN //</div>
+
+<script>
+document.addEventListener('click', e => {
+  const el = e.target.closest('.revealable');
+  if (el) el.classList.toggle('shown');
+});
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('revealable')) {
+    e.preventDefault(); e.target.classList.toggle('shown');
+  }
+});
+</script>
+</body>
+</html>

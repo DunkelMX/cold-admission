@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WRAITH — Operation Cold Admission</title>
+<meta name="description" content="A Delta Green Adventure">
+<link rel="icon" href="../../assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../static/style.css">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="es-MX" href="../../es/agents/wraith/">
+</head>
+<body>
+<div class="banner">// TOP SECRET // NOFORN // DELTA GREEN //</div>
+
+<header class="chrome">
+  <a class="brand" href="../../index.html">
+    <span class="brand-op">Operation Cold Admission</span>
+    <span class="brand-sub">A Delta Green Adventure</span>
+  </a>
+  <nav>
+    <a href="../../index.html">Cover Sheet</a>
+    <a href="../../agents/">Roster</a>
+    <a href="../../operations/">Operations</a>
+    <span class="langs">
+<span class="on">EN</span> <a href="../../es/agents/wraith/" hreflang="es-MX">ES</a>
+    </span>
+  </nav>
+</header>
+
+<main>
+<section class="wrap dossier">
+  <div class="dossier-head">
+    <div class="plate-img big status-active">
+      <img src="../../assets/portraits/wraith.jpg" alt="WRAITH">
+      <span class="regmark tl"></span><span class="regmark tr"></span>
+      <span class="regmark bl"></span><span class="regmark br"></span>
+    </div>
+
+    <div class="dossier-meta">
+      <h1>WRAITH</h1>
+      <dl>
+        <dt>Legal name</dt><dd><span class="redacted revealable" tabindex="0" role="button"><span class="redacted-text">Ryunosuke Tatewaki</span></span></dd>
+        <dt>Cover identity</dt><dd>Import logistics consultant — <span class="redacted revealable" tabindex="0" role="button"><span class="redacted-text">Yamaguchi-gumi — severed affiliation</span></span></dd>
+        <dt>Status</dt><dd class="s-active">Active</dd>
+        <dt>Operations served</dt>
+        <dd><a href="../../operations/01-cold-admission/">01 · Cold Admission</a></dd>
+        <dt>Injuries</dt>
+        <dd>—</dd>
+        <dt>Bonds</dt>
+        <dd><span class="unk">Unknown — pending agent sheet</span></dd>
+        <dt>Disorders</dt>
+        <dd><span class="unk">Unknown — pending agent sheet</span></dd>
+      </dl>
+    </div>
+  </div>
+
+  <article class="doc is-provisional">
+    <p class="provisional-note"><span class="stamp stamp-prov">Provisional</span>Provisional record. Compiled from after-action reporting pending confirmation by the agent.</p>
+    
+    <h2>Background</h2>
+    <p>Covert entry and close-quarters specialist. Exceptional mobility — climbing, dropping,
+crossing ground that has no route across it — and a working proficiency with bladed
+weapons that predates any federal interest in him.</p>
+<p>The affiliation on his record is severed on paper. Whether it is severed in practice
+is a question the Program has apparently decided not to ask while he remains useful.
+He entered the Program through a prosecution that was never filed, and the terms of
+that arrangement are not in this file.</p>
+<p>On operations he is the one who is already inside. He does not wait for the plan to
+resolve and he does not report his position. This is the source of both his value and
+the incident in Section 5 of the Cold Admission report.</p>
+<p>He is honest to the point of injury. Asked whether he had abandoned a wounded operator
+at the extraction point, he said yes, without qualification, and did not offer a reason
+beyond the one that was true. TRIAGE's assessment records this as creditable, which is
+its own kind of remark.</p>
+<p>Coping, post-operation, by means outside Program guidance. The pattern is new.</p>
+  </article>
+</section>
+</main>
+
+<footer>
+  <p>Cell records. Compiled by the surviving operators. No supervising authority.</p>
+  <p class="hint">Click a black bar to reveal what is under it.</p>
+</footer>
+<div class="banner">// TOP SECRET // NOFORN // DELTA GREEN //</div>
+
+<script>
+document.addEventListener('click', e => {
+  const el = e.target.closest('.revealable');
+  if (el) el.classList.toggle('shown');
+});
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('revealable')) {
+    e.preventDefault(); e.target.classList.toggle('shown');
+  }
+});
+</script>
+</body>
+</html>

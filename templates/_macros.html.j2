@@ -1,0 +1,39 @@
+{% macro plate(agent, t, site_root, root) %}
+<a class="plate" href="{{ root }}agents/{{ agent.slug }}/">
+  <div class="plate-img status-{{ agent.status }}">
+    {% if agent.portrait %}
+    <img src="{{ site_root }}assets/portraits/{{ agent.portrait }}" alt="{{ agent.codename }}" loading="lazy">
+    {% else %}
+    <div class="no-photo"><span>{{ t.photo_withheld }}</span></div>
+    {% endif %}
+    <span class="regmark tl"></span><span class="regmark tr"></span>
+    <span class="regmark bl"></span><span class="regmark br"></span>
+    {% if agent.status in ('mia', 'kia') %}
+    <span class="stamp stamp-casualty">{{ t['status_' ~ agent.status] }}</span>
+    {% endif %}
+  </div>
+  <div class="plate-id">
+    <span class="plate-code">{{ agent.codename }}</span>
+    <span class="plate-cover">{{ agent.cover|redact }}</span>
+    <span class="plate-status s-{{ agent.status }}">{{ t['status_' ~ agent.status] }}</span>
+  </div>
+</a>
+{% endmacro %}
+
+{% macro threadlist(threads, t, root) %}
+<ul class="threads">
+  {% for th in threads %}
+  <li class="thread lvl-{{ th.level }}">
+    <span class="lvl">{{ t['level_' ~ th.level] }}</span>
+    <span class="thread-text">{{ th.text|redact }}</span>
+    <a class="thread-op" href="{{ root }}operations/{{ th.op }}/">{{ th.op_title }}</a>
+  </li>
+  {% else %}
+  <li class="empty">{{ t.threads_empty }}</li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+
+{% macro untranslated_bar(untranslated, t) %}
+{% if untranslated %}<p class="untranslated">{{ t.untranslated }}</p>{% endif %}
+{% endmacro %}

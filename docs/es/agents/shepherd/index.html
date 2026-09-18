@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHEPHERD — Operación Cold Admission</title>
+<meta name="description" content="Una aventura de Delta Green">
+<link rel="icon" href="../../../assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../static/style.css">
+<link rel="alternate" hreflang="es-MX" href="./">
+<link rel="alternate" hreflang="en" href="../../../agents/shepherd/">
+</head>
+<body>
+<div class="banner">// MÁXIMO SECRETO // SIN DIFUSIÓN EXTERNA // DELTA GREEN //</div>
+
+<header class="chrome">
+  <a class="brand" href="../../index.html">
+    <span class="brand-op">Operación Cold Admission</span>
+    <span class="brand-sub">Una aventura de Delta Green</span>
+  </a>
+  <nav>
+    <a href="../../index.html">Portada</a>
+    <a href="../../agents/">Personal</a>
+    <a href="../../operations/">Operaciones</a>
+    <span class="langs">
+<a href="../../../agents/shepherd/" hreflang="en">EN</a> <span class="on">ES</span>    </span>
+  </nav>
+</header>
+
+<main>
+<section class="wrap dossier">
+  <div class="dossier-head">
+    <div class="plate-img big status-mia">
+      <div class="no-photo"><span>Fotografía retenida</span></div>
+      <span class="regmark tl"></span><span class="regmark tr"></span>
+      <span class="regmark bl"></span><span class="regmark br"></span>
+      <span class="stamp stamp-casualty">Desaparecido en acción</span>
+    </div>
+
+    <div class="dossier-meta">
+      <h1>SHEPHERD</h1>
+      <dl>
+        <dt>Nombre legal</dt><dd><span class="redacted revealable" tabindex="0" role="button"><span class="redacted-text">Gerald A. Voss</span></span></dd>
+        <dt>Identidad de cobertura</dt><dd>Jefe de Equipo — <span class="redacted revealable" tabindex="0" role="button"><span class="redacted-text">U.S. Marshals Service</span></span></dd>
+        <dt>Situación</dt><dd class="s-mia">Desaparecido en acción</dd>
+        <dt>Operaciones</dt>
+        <dd><a href="../../operations/01-cold-admission/">01 · Cold Admission</a></dd>
+        <dt>Lesiones</dt>
+        <dd><ul><li>Llevado a través de la abertura durante el enfrentamiento final. No se recuperaron restos.</li></ul></dd>
+        <dt>Vínculos</dt>
+        <dd><span class="unk">Desconocido — pendiente de la hoja del agente</span></dd>
+        <dt>Trastornos</dt>
+        <dd><span class="unk">Desconocido — pendiente de la hoja del agente</span></dd>
+      </dl>
+    </div>
+  </div>
+
+  <article class="doc is-provisional">
+    <p class="provisional-note"><span class="stamp stamp-prov">Provisional</span>Registro provisional. Compilado a partir del informe post-acción, pendiente de confirmación por el agente.</p>
+    
+    <h2>Antecedentes</h2>
+    <p>Jefe de Equipo. Veintidós años de servicio federal antes del Programa, la mayoría
+dedicados a detener gente que no quería ser detenida.</p>
+<p>Manejó la célula como manejaba un grupo de trabajo de fugitivos: informar a todos, mantener
+la radio abierta, ser el último en salir. El registro de Cold Admission sugiere que no había ajustado
+esa doctrina a un entorno donde la radio no permanece abierta y el último en salir
+puede no ser un sobreviviente.</p>
+<p>En el enfrentamiento final se vio obligado a elegir a cuál de dos Operadores alcanzar. Alcanzó
+al que de otro modo habría caído seis metros hasta el piso del ritual,
+lo jaló de vuelta a la pasarela y siguió disparando. Un apéndice atravesó la
+abertura y se lo llevó.</p>
+<p>El estado es DESAPARECIDO EN ACCIÓN, presunto MUERTO EN ACCIÓN. El agente informante se negó formalmente
+a certificar la muerte sin restos, y la presunción en este expediente se sustenta en el
+testimonio de los Operadores que lo presenciaron, no en evidencia física.</p>
+<p>Su familia nunca fue informada de su participación. No se les dio explicación alguna
+y, hasta donde la célula sabe, creen que las abandonó. Se recomendó el reconocimiento
+póstumo y aún no hay respuesta.</p>
+  </article>
+</section>
+</main>
+
+<footer>
+  <p>Registros de la célula. Compilados por los operadores sobrevivientes. Sin autoridad supervisora.</p>
+  <p class="hint">Haz clic en una barra negra para revelar lo que hay debajo.</p>
+</footer>
+<div class="banner">// MÁXIMO SECRETO // SIN DIFUSIÓN EXTERNA // DELTA GREEN //</div>
+
+<script>
+document.addEventListener('click', e => {
+  const el = e.target.closest('.revealable');
+  if (el) el.classList.toggle('shown');
+});
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('revealable')) {
+    e.preventDefault(); e.target.classList.toggle('shown');
+  }
+});
+</script>
+</body>
+</html>

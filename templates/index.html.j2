@@ -1,0 +1,39 @@
+{% extends "base.html.j2" %}
+{% from "_macros.html.j2" import plate, threadlist, untranslated_bar %}
+{% block content %}
+
+<section class="wrap cover">
+  <div class="cover-grid">
+    <figure class="poster">
+      <img src="{{ site_root }}assets/brand/cold-admission.jpg" alt="{{ t.site_title }}">
+    </figure>
+    <div class="cover-side">
+      <h1 class="cover-title">{{ page.title }}</h1>
+      <p class="cover-sub">{{ t.subtitle }}</p>
+      <dl class="cover-stats">
+        <dt>{{ t.status }}</dt><dd>{{ page.cell_status }}</dd>
+        <dt>{{ t.nav_operations }}</dt><dd>{{ operations|length }}</dd>
+        <dt>{{ t.nav_roster }}</dt><dd>{{ agents|length }}</dd>
+      </dl>
+      <div class="cover-links">
+        <a href="{{ root }}operations/">{{ t.nav_operations }}</a>
+        <a href="{{ root }}agents/">{{ t.nav_roster }}</a>
+      </div>
+    </div>
+  </div>
+
+  <article class="doc">
+    {{ untranslated_bar(untranslated, t) }}
+    {{ body|safe }}
+  </article>
+
+  <h2 class="sec">{{ t.threads_title }}</h2>
+  <p class="sec-intro">{{ t.threads_intro }}</p>
+  {{ threadlist(threads, t, root) }}
+
+  <h2 class="sec">{{ t.roster_title }}</h2>
+  <div class="plates">
+    {% for a in agents %}{{ plate(a, t, site_root, root) }}{% endfor %}
+  </div>
+</section>
+{% endblock %}

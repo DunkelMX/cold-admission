@@ -1,0 +1,48 @@
+{% extends "base.html.j2" %}
+{% from "_macros.html.j2" import untranslated_bar %}
+{% block title %}{{ page.codename }} — {{ t.site_title }}{% endblock %}
+{% block content %}
+<section class="wrap dossier">
+  <div class="dossier-head">
+    <div class="plate-img big status-{{ page.status }}">
+      {% if page.portrait %}
+      <img src="{{ site_root }}assets/portraits/{{ page.portrait }}" alt="{{ page.codename }}">
+      {% else %}
+      <div class="no-photo"><span>{{ t.photo_withheld }}</span></div>
+      {% endif %}
+      <span class="regmark tl"></span><span class="regmark tr"></span>
+      <span class="regmark bl"></span><span class="regmark br"></span>
+      {% if page.status in ('mia', 'kia') %}
+      <span class="stamp stamp-casualty">{{ t['status_' ~ page.status] }}</span>
+      {% endif %}
+    </div>
+
+    <div class="dossier-meta">
+      <h1>{{ page.codename }}</h1>
+      <dl>
+        <dt>{{ t.legal_name }}</dt><dd>{{ page.legal_name|redact }}</dd>
+        <dt>{{ t.cover_identity }}</dt><dd>{{ page.cover|redact }}{% if page.agency %} — {{ page.agency|redact }}{% endif %}</dd>
+        <dt>{{ t.status }}</dt><dd class="s-{{ page.status }}">{{ t['status_' ~ page.status] }}</dd>
+        {% if page.player %}<dt>{{ t.player }}</dt><dd>{{ page.player }}</dd>{% endif %}
+        <dt>{{ t.operations_served }}</dt>
+        <dd>{% for op in operations %}{% if op.number in page.operations %}<a href="{{ root }}operations/{{ op.slug }}/">{{ op.number }} · {{ op.title }}</a>{% endif %}{% endfor %}</dd>
+        <dt>{{ t.injuries }}</dt>
+        <dd>{% if page.injuries %}<ul>{% for i in page.injuries %}<li>{{ i|redact }}</li>{% endfor %}</ul>{% else %}—{% endif %}</dd>
+        <dt>{{ t.bonds }}</dt>
+        <dd>{% if page.bonds %}<ul>{% for b in page.bonds %}<li>{{ b|redact }}</li>{% endfor %}</ul>{% else %}<span class="unk">{{ t.unknown }}</span>{% endif %}</dd>
+        <dt>{{ t.disorders }}</dt>
+        <dd>{% if page.disorders %}<ul>{% for d in page.disorders %}<li>{{ d|redact }}</li>{% endfor %}</ul>{% else %}<span class="unk">{{ t.unknown }}</span>{% endif %}</dd>
+      </dl>
+    </div>
+  </div>
+
+  <article class="doc{% if page.provisional %} is-provisional{% endif %}">
+    {% if page.provisional %}
+    <p class="provisional-note"><span class="stamp stamp-prov">{{ t.provisional }}</span>{{ t.provisional_note }}</p>
+    {% endif %}
+    {{ untranslated_bar(untranslated, t) }}
+    <h2>{{ t.background }}</h2>
+    {{ body|safe }}
+  </article>
+</section>
+{% endblock %}

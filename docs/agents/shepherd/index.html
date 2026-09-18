@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHEPHERD — Operation Cold Admission</title>
+<meta name="description" content="A Delta Green Adventure">
+<link rel="icon" href="../../assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../static/style.css">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="es-MX" href="../../es/agents/shepherd/">
+</head>
+<body>
+<div class="banner">// TOP SECRET // NOFORN // DELTA GREEN //</div>
+
+<header class="chrome">
+  <a class="brand" href="../../index.html">
+    <span class="brand-op">Operation Cold Admission</span>
+    <span class="brand-sub">A Delta Green Adventure</span>
+  </a>
+  <nav>
+    <a href="../../index.html">Cover Sheet</a>
+    <a href="../../agents/">Roster</a>
+    <a href="../../operations/">Operations</a>
+    <span class="langs">
+<span class="on">EN</span> <a href="../../es/agents/shepherd/" hreflang="es-MX">ES</a>
+    </span>
+  </nav>
+</header>
+
+<main>
+<section class="wrap dossier">
+  <div class="dossier-head">
+    <div class="plate-img big status-mia">
+      <div class="no-photo"><span>Photo withheld</span></div>
+      <span class="regmark tl"></span><span class="regmark tr"></span>
+      <span class="regmark bl"></span><span class="regmark br"></span>
+      <span class="stamp stamp-casualty">Missing in action</span>
+    </div>
+
+    <div class="dossier-meta">
+      <h1>SHEPHERD</h1>
+      <dl>
+        <dt>Legal name</dt><dd><span class="redacted revealable" tabindex="0" role="button"><span class="redacted-text">Gerald A. Voss</span></span></dd>
+        <dt>Cover identity</dt><dd>Team Lead — <span class="redacted revealable" tabindex="0" role="button"><span class="redacted-text">U.S. Marshals Service</span></span></dd>
+        <dt>Status</dt><dd class="s-mia">Missing in action</dd>
+        <dt>Operations served</dt>
+        <dd><a href="../../operations/01-cold-admission/">01 · Cold Admission</a></dd>
+        <dt>Injuries</dt>
+        <dd><ul><li>Taken through the aperture during the final engagement. No remains recovered.</li></ul></dd>
+        <dt>Bonds</dt>
+        <dd><span class="unk">Unknown — pending agent sheet</span></dd>
+        <dt>Disorders</dt>
+        <dd><span class="unk">Unknown — pending agent sheet</span></dd>
+      </dl>
+    </div>
+  </div>
+
+  <article class="doc is-provisional">
+    <p class="provisional-note"><span class="stamp stamp-prov">Provisional</span>Provisional record. Compiled from after-action reporting pending confirmation by the agent.</p>
+    
+    <h2>Background</h2>
+    <p>Team lead. Twenty-two years of federal service before the Program, most of it spent
+bringing people in who did not want to come.</p>
+<p>Ran the cell the way he ran a fugitive task force — brief everyone, keep the radio
+open, be the last one out. The record of Cold Admission suggests he had not adjusted
+that doctrine to an environment where the radio does not stay open and the last one out
+may not be a survivor.</p>
+<p>In the final engagement he was forced to choose which of two operators to reach. He
+reached the one who would otherwise have fallen six meters into the ritual floor,
+pulled him back onto the catwalk, and kept firing. An appendage came through the
+aperture and took him.</p>
+<p>Status is missing, presumed killed in action. The reporting agent has formally declined
+to certify death without remains, and the presumption in this file rests on the
+testimony of the operators who saw it, not on physical evidence.</p>
+<p>His family were never briefed on his involvement. They have been given no explanation
+and, so far as the cell is aware, believe he left them. Posthumous recognition has been
+recommended and not yet answered.</p>
+  </article>
+</section>
+</main>
+
+<footer>
+  <p>Cell records. Compiled by the surviving operators. No supervising authority.</p>
+  <p class="hint">Click a black bar to reveal what is under it.</p>
+</footer>
+<div class="banner">// TOP SECRET // NOFORN // DELTA GREEN //</div>
+
+<script>
+document.addEventListener('click', e => {
+  const el = e.target.closest('.revealable');
+  if (el) el.classList.toggle('shown');
+});
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('revealable')) {
+    e.preventDefault(); e.target.classList.toggle('shown');
+  }
+});
+</script>
+</body>
+</html>

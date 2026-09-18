@@ -1,0 +1,82 @@
+# Fixed EN -> ES-MX terminology for translate.py. Hand-maintained.
+# Every entry here goes into the translator's system prompt on every call, so the
+# Spanish in Operation 07 uses the same words as Operation 01.
+
+variant: es-MX
+variant_name: "Mexican Spanish"
+
+terms:
+  After-Action Report: "INFORME POST-ACCIÓN"
+  operation codename: "CÓDIGO DE MISIÓN"
+  agent codename: "CÓDIGO DE AGENTE"
+  Agent: "Agente"
+  Operator: "Operador"
+  Team Lead: "Jefe de Equipo"
+  missing in action (MIA): "DESAPARECIDO EN ACCIÓN"
+  killed in action (KIA): "MUERTO EN ACCIÓN"
+  "// TOP SECRET // NOFORN //": "// MÁXIMO SECRETO // SIN DIFUSIÓN EXTERNA //"
+  "[REDACTED]": "[REDACTADO]"
+  open threads: "PISTAS ABIERTAS"
+  hot / warm / cold (lead): "CALIENTE / TIBIA / FRÍA"
+  insertion: "inserción"
+  withdrawal: "repliegue"
+  extraction: "extracción"
+  engagement: "enfrentamiento"
+  the unit stands down: "la unidad queda desactivada"
+  force protection: "protección del personal"
+  The Unnatural: "Lo Paranormal"
+  Sanity: "Cordura"
+  Bonds: "Vínculos"
+  Disorders: "Trastornos"
+  evidence (recovered physical items): "evidencia"
+  leads / traces / clues: "indicios"
+  provisional: "provisional"
+  photo withheld: "fotografía retenida"
+  case officer: "oficial de caso"
+  the Program: "el Programa"
+  catwalk: "pasarela"
+  sprinkler system: "sistema de rociadores"
+  ritual participant: "participante del ritual"
+  guard: "guardia"
+  aperture: "abertura"
+  flashbang: "granada cegadora"
+  fragmentation grenade: "granada de fragmentación"
+  debrief: "interrogatorio de regreso"
+  stand-down period: "periodo de desactivación"
+
+rules:
+  - "Use ustedes, never vosotros — in pronouns and in every verb conjugation."
+  - "Use the simple preterite for narration (sostuve, se retiró, no presencié), not the compound perfect (he sostenido). Latin American past tense, and it reads more clipped, which suits the voice."
+  - "Mexican lexicon where it diverges from Peninsular: carro/auto, estacionamiento, manejar, celular, computadora, lentes, banqueta, cerillo."
+  - "Impersonal report voice where the English is impersonal (se observó, se administró); keep first person where TRIAGE uses it."
+  - "Keep clinical vocabulary clinical and precise: otorragia bilateral, pupilas isocóricas y reactivas, haloperidol 2 mg IM, herida penetrante, membrana timpánica."
+  - "Military register: clipped, declarative, no literary flourish. This is a report, not prose."
+  - "Preserve every markdown structure exactly: heading levels and text positions, list markers, bold/italic, blank lines."
+  - "Never translate or alter [REDACTED] / [REDACTED:Name] markers — copy them through byte-for-byte, including the name inside the colon form."
+  - "Codenames (TRIAGE, SHEPHERD, BULWARK, CODEX, WRAITH) are never translated."
+
+banned:
+  # coger is vulgar in Mexico and the English source is full of seized/grabbed/took.
+  # Use sujetar, aferrar, atrapar, tomar, agarrar.
+  - "coger"
+  - "cogió"
+  - "cogí"
+  - "cogieron"
+  - "cogiendo"
+  - "vosotros"
+  - "habéis"
+  - "vale"
+  - "gafas"
+  - "ordenador"
+  - "móvil"
+  - "coche"
+  - "aparcamiento"
+  - "acera"
+  - "cerilla"
+  - "zumo"
+
+# Never translated — brand names and structural values.
+never_translate:
+  - "Operation and campaign titles (Cold Admission stays Cold Admission)"
+  - "Agent codenames: TRIAGE, SHEPHERD, BULWARK, CODEX, WRAITH"
+  - "Thread level values: hot, warm, cold (these are structural keys, not prose)"

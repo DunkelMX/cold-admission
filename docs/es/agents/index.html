@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal de la Célula — Operación Cold Admission</title>
+<meta name="description" content="Una aventura de Delta Green">
+<link rel="icon" href="../../assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../static/style.css">
+<link rel="alternate" hreflang="es-MX" href="./">
+<link rel="alternate" hreflang="en" href="../../agents/">
+</head>
+<body>
+<div class="banner">// MÁXIMO SECRETO // SIN DIFUSIÓN EXTERNA // DELTA GREEN //</div>
+
+<header class="chrome">
+  <a class="brand" href="../index.html">
+    <span class="brand-op">Operación Cold Admission</span>
+    <span class="brand-sub">Una aventura de Delta Green</span>
+  </a>
+  <nav>
+    <a href="../index.html">Portada</a>
+    <a href="../agents/">Personal</a>
+    <a href="../operations/">Operaciones</a>
+    <span class="langs">
+<a href="../../agents/" hreflang="en">EN</a> <span class="on">ES</span>    </span>
+  </nav>
+</header>
+
+<main>
+<section class="wrap">
+  <h1 class="sec">Personal de la Célula</h1>
+  <p class="sec-intro">Agentes asignados a la célula. Los expedientes se compilan a partir de los informes post-acción.</p>
+  <div class="plates">
+<a class="plate" href="../agents/bulwark/">
+  <div class="plate-img status-active">
+    <div class="no-photo"><span>Fotografía retenida</span></div>
+    <span class="regmark tl"></span><span class="regmark tr"></span>
+    <span class="regmark bl"></span><span class="regmark br"></span>
+  </div>
+  <div class="plate-id">
+    <span class="plate-code">BULWARK</span>
+    <span class="plate-cover">Agente del Servicio Secreto de EE. UU.</span>
+    <span class="plate-status s-active">Activo</span>
+  </div>
+</a>
+<a class="plate" href="../agents/codex/">
+  <div class="plate-img status-active">
+    <div class="no-photo"><span>Fotografía retenida</span></div>
+    <span class="regmark tl"></span><span class="regmark tr"></span>
+    <span class="regmark bl"></span><span class="regmark br"></span>
+  </div>
+  <div class="plate-id">
+    <span class="plate-code">CODEX</span>
+    <span class="plate-cover">Antropólogo — profesorado universitario</span>
+    <span class="plate-status s-active">Activo</span>
+  </div>
+</a>
+<a class="plate" href="../agents/shepherd/">
+  <div class="plate-img status-mia">
+    <div class="no-photo"><span>Fotografía retenida</span></div>
+    <span class="regmark tl"></span><span class="regmark tr"></span>
+    <span class="regmark bl"></span><span class="regmark br"></span>
+    <span class="stamp stamp-casualty">Desaparecido en acción</span>
+  </div>
+  <div class="plate-id">
+    <span class="plate-code">SHEPHERD</span>
+    <span class="plate-cover">Jefe de Equipo</span>
+    <span class="plate-status s-mia">Desaparecido en acción</span>
+  </div>
+</a>
+<a class="plate" href="../agents/triage/">
+  <div class="plate-img status-active">
+    <img src="../../assets/portraits/triage.jpg" alt="TRIAGE" loading="lazy">
+    <span class="regmark tl"></span><span class="regmark tr"></span>
+    <span class="regmark bl"></span><span class="regmark br"></span>
+  </div>
+  <div class="plate-id">
+    <span class="plate-code">TRIAGE</span>
+    <span class="plate-cover">Médico de campo / Facultativo de FEMA</span>
+    <span class="plate-status s-active">Activo</span>
+  </div>
+</a>
+<a class="plate" href="../agents/wraith/">
+  <div class="plate-img status-active">
+    <img src="../../assets/portraits/wraith.jpg" alt="WRAITH" loading="lazy">
+    <span class="regmark tl"></span><span class="regmark tr"></span>
+    <span class="regmark bl"></span><span class="regmark br"></span>
+  </div>
+  <div class="plate-id">
+    <span class="plate-code">WRAITH</span>
+    <span class="plate-cover">Consultor de logística de importación</span>
+    <span class="plate-status s-active">Activo</span>
+  </div>
+</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Registros de la célula. Compilados por los operadores sobrevivientes. Sin autoridad supervisora.</p>
+  <p class="hint">Haz clic en una barra negra para revelar lo que hay debajo.</p>
+</footer>
+<div class="banner">// MÁXIMO SECRETO // SIN DIFUSIÓN EXTERNA // DELTA GREEN //</div>
+
+<script>
+document.addEventListener('click', e => {
+  const el = e.target.closest('.revealable');
+  if (el) el.classList.toggle('shown');
+});
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('revealable')) {
+    e.preventDefault(); e.target.classList.toggle('shown');
+  }
+});
+</script>
+</body>
+</html>

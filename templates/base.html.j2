@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="{{ lang_attr }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ t.site_title }}{% endblock %}</title>
+<meta name="description" content="{{ t.subtitle }}">
+<link rel="icon" href="{{ site_root }}assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ site_root }}static/style.css">
+<link rel="alternate" hreflang="{{ lang_attr }}" href="./">
+<link rel="alternate" hreflang="{{ 'es-MX' if lang == 'en' else 'en' }}" href="{{ alt_url }}">
+</head>
+<body>
+<div class="banner">{{ t.classification }}</div>
+
+<header class="chrome">
+  <a class="brand" href="{{ root }}index.html">
+    <span class="brand-op">{{ t.site_title }}</span>
+    <span class="brand-sub">{{ t.subtitle }}</span>
+  </a>
+  <nav>
+    <a href="{{ root }}index.html">{{ t.nav_cover }}</a>
+    <a href="{{ root }}agents/">{{ t.nav_roster }}</a>
+    <a href="{{ root }}operations/">{{ t.nav_operations }}</a>
+    <span class="langs">
+      {% if lang == 'en' %}<span class="on">EN</span> <a href="{{ alt_url }}" hreflang="es-MX">ES</a>
+      {% else %}<a href="{{ alt_url }}" hreflang="en">EN</a> <span class="on">ES</span>{% endif %}
+    </span>
+  </nav>
+</header>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+<footer>
+  <p>{{ t.footer }}</p>
+  <p class="hint">{{ t.reveal_hint }}</p>
+</footer>
+<div class="banner">{{ t.classification }}</div>
+
+<script>
+document.addEventListener('click', e => {
+  const el = e.target.closest('.revealable');
+  if (el) el.classList.toggle('shown');
+});
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('revealable')) {
+    e.preventDefault(); e.target.classList.toggle('shown');
+  }
+});
+</script>
+</body>
+</html>

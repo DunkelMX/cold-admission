@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Roster — Operation Cold Admission</title>
+<meta name="description" content="A Delta Green Adventure">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/style.css">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="es-MX" href="../es/agents/">
+</head>
+<body>
+<div class="banner">// TOP SECRET // NOFORN // DELTA GREEN //</div>
+
+<header class="chrome">
+  <a class="brand" href="../index.html">
+    <span class="brand-op">Operation Cold Admission</span>
+    <span class="brand-sub">A Delta Green Adventure</span>
+  </a>
+  <nav>
+    <a href="../index.html">Cover Sheet</a>
+    <a href="../agents/">Roster</a>
+    <a href="../operations/">Operations</a>
+    <span class="langs">
+<span class="on">EN</span> <a href="../es/agents/" hreflang="es-MX">ES</a>
+    </span>
+  </nav>
+</header>
+
+<main>
+<section class="wrap">
+  <h1 class="sec">Agent Roster</h1>
+  <p class="sec-intro">Personnel assigned to the cell. Dossiers are compiled from after-action reporting.</p>
+  <div class="plates">
+<a class="plate" href="../agents/bulwark/">
+  <div class="plate-img status-active">
+    <div class="no-photo"><span>Photo withheld</span></div>
+    <span class="regmark tl"></span><span class="regmark tr"></span>
+    <span class="regmark bl"></span><span class="regmark br"></span>
+  </div>
+  <div class="plate-id">
+    <span class="plate-code">BULWARK</span>
+    <span class="plate-cover">U.S. Secret Service Agent</span>
+    <span class="plate-status s-active">Active</span>
+  </div>
+</a>
+<a class="plate" href="../agents/codex/">
+  <div class="plate-img status-active">
+    <div class="no-photo"><span>Photo withheld</span></div>
+    <span class="regmark tl"></span><span class="regmark tr"></span>
+    <span class="regmark bl"></span><span class="regmark br"></span>
+  </div>
+  <div class="plate-id">
+    <span class="plate-code">CODEX</span>
+    <span class="plate-cover">Anthropologist — university faculty</span>
+    <span class="plate-status s-active">Active</span>
+  </div>
+</a>
+<a class="plate" href="../agents/shepherd/">
+  <div class="plate-img status-mia">
+    <div class="no-photo"><span>Photo withheld</span></div>
+    <span class="regmark tl"></span><span class="regmark tr"></span>
+    <span class="regmark bl"></span><span class="regmark br"></span>
+    <span class="stamp stamp-casualty">Missing in action</span>
+  </div>
+  <div class="plate-id">
+    <span class="plate-code">SHEPHERD</span>
+    <span class="plate-cover">Team Lead</span>
+    <span class="plate-status s-mia">Missing in action</span>
+  </div>
+</a>
+<a class="plate" href="../agents/triage/">
+  <div class="plate-img status-active">
+    <img src="../assets/portraits/triage.jpg" alt="TRIAGE" loading="lazy">
+    <span class="regmark tl"></span><span class="regmark tr"></span>
+    <span class="regmark bl"></span><span class="regmark br"></span>
+  </div>
+  <div class="plate-id">
+    <span class="plate-code">TRIAGE</span>
+    <span class="plate-cover">FEMA Field Medic / Physician</span>
+    <span class="plate-status s-active">Active</span>
+  </div>
+</a>
+<a class="plate" href="../agents/wraith/">
+  <div class="plate-img status-active">
+    <img src="../assets/portraits/wraith.jpg" alt="WRAITH" loading="lazy">
+    <span class="regmark tl"></span><span class="regmark tr"></span>
+    <span class="regmark bl"></span><span class="regmark br"></span>
+  </div>
+  <div class="plate-id">
+    <span class="plate-code">WRAITH</span>
+    <span class="plate-cover">Import logistics consultant</span>
+    <span class="plate-status s-active">Active</span>
+  </div>
+</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Cell records. Compiled by the surviving operators. No supervising authority.</p>
+  <p class="hint">Click a black bar to reveal what is under it.</p>
+</footer>
+<div class="banner">// TOP SECRET // NOFORN // DELTA GREEN //</div>
+
+<script>
+document.addEventListener('click', e => {
+  const el = e.target.closest('.revealable');
+  if (el) el.classList.toggle('shown');
+});
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('revealable')) {
+    e.preventDefault(); e.target.classList.toggle('shown');
+  }
+});
+</script>
+</body>
+</html>

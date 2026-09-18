@@ -1,0 +1,21 @@
+{% extends "base.html.j2" %}
+{% block title %}{{ t.operations_title }} — {{ t.site_title }}{% endblock %}
+{% block content %}
+<section class="wrap">
+  <h1 class="sec">{{ t.operations_title }}</h1>
+  <p class="sec-intro">{{ t.operations_intro }}</p>
+  <div class="oplist">
+    {% for op in operations %}
+    <a class="opcard" href="{{ root }}operations/{{ op.slug }}/">
+      {% if op.keyart %}<img src="{{ site_root }}assets/keyart/{{ op.keyart }}" alt="" loading="lazy">{% endif %}
+      <div class="opcard-body">
+        <span class="opnum">{{ t.op_label }} {{ op.number }}</span>
+        <h2>{{ op.title }}</h2>
+        <p class="opout">{{ op.outcome|redact }}</p>
+        <span class="opstatus">{{ t['op_' ~ op.status] }}</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

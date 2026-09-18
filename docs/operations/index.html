@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operations Archive — Operation Cold Admission</title>
+<meta name="description" content="A Delta Green Adventure">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/style.css">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="es-MX" href="../es/operations/">
+</head>
+<body>
+<div class="banner">// TOP SECRET // NOFORN // DELTA GREEN //</div>
+
+<header class="chrome">
+  <a class="brand" href="../index.html">
+    <span class="brand-op">Operation Cold Admission</span>
+    <span class="brand-sub">A Delta Green Adventure</span>
+  </a>
+  <nav>
+    <a href="../index.html">Cover Sheet</a>
+    <a href="../agents/">Roster</a>
+    <a href="../operations/">Operations</a>
+    <span class="langs">
+<span class="on">EN</span> <a href="../es/operations/" hreflang="es-MX">ES</a>
+    </span>
+  </nav>
+</header>
+
+<main>
+<section class="wrap">
+  <h1 class="sec">Operations Archive</h1>
+  <p class="sec-intro">Filed after-action reports, most recent first.</p>
+  <div class="oplist">
+    <a class="opcard" href="../operations/01-cold-admission/">
+<img src="../assets/keyart/01-cold-admission.jpg" alt="" loading="lazy">      <div class="opcard-body">
+        <span class="opnum">Operation 01</span>
+        <h2>Cold Admission</h2>
+        <p class="opout">Ritual disrupted. Team lead lost.</p>
+        <span class="opstatus">Closed</span>
+      </div>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Cell records. Compiled by the surviving operators. No supervising authority.</p>
+  <p class="hint">Click a black bar to reveal what is under it.</p>
+</footer>
+<div class="banner">// TOP SECRET // NOFORN // DELTA GREEN //</div>
+
+<script>
+document.addEventListener('click', e => {
+  const el = e.target.closest('.revealable');
+  if (el) el.classList.toggle('shown');
+});
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList?.contains('revealable')) {
+    e.preventDefault(); e.target.classList.toggle('shown');
+  }
+});
+</script>
+</body>
+</html>
