@@ -1,10 +1,10 @@
 ---
 codename: BULWARK
-legal_name: "[REDACTED:Daniel Okonkwo]"
+legal_name: "[REDACTED:James Johnson]"
 status: active
 cover: "U.S. Secret Service Agent"
 agency: "United States Secret Service"
-portrait:
+portrait: "JamesJohnson.jpg"
 player: Juan Pablo C
 operations: ["01"]
 injuries:

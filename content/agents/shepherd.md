@@ -5,7 +5,7 @@ status: mia
 npc: true
 cover: "Team Lead"
 agency: "[REDACTED:U.S. Marshals Service]"
-portrait: "GeorgeKanouse.jpg"
+portrait: "George.jpg"
 player:
 operations: ["01"]
 injuries:
