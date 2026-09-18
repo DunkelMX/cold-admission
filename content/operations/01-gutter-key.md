@@ -24,14 +24,14 @@ threads:
   - level: cold
     text: "Provenance of the sacrificial dagger and the incense, and whether either is itself paranormal."
   - level: cold
-    text: "What lies on the far side of the [REDACTED:aperture], and the scale of what reached through it."
+    text: "What lies on the far side of the [REDACTED:portal], and the scale of what reached through it."
 ---
 
 ## Operational Summary
 
 The ritual was disrupted and the primary threat neutralized. The unit did not return intact.
 
-Agent SHEPHERD, team lead, was lost during the final engagement when an [REDACTED:anomalous entity] seized him and pulled him through [REDACTED:the aperture]. Recovery was not possible. His final actions prevented a second fatality. Posthumous recognition is recommended (Section 2).
+Agent SHEPHERD, team lead, was lost during the final engagement when [REDACTED:the thing on the other side] seized him and pulled him through [REDACTED:what looked like an interdimensional portal]. Recovery was not possible. His final actions prevented a second fatality. Posthumous recognition is recommended (Section 2).
 
 The team fragmented immediately after insertion and fought most of the engagement in isolation. Surviving operators sustained injuries, equipment losses, and anomalous exposure. Individual assessments follow.
 
@@ -67,7 +67,7 @@ When I moved to engage a ritual participant, Agent SHEPHERD had to choose betwee
 
 He chose Agent BULWARK. He caught him before the fall and pulled him back onto the catwalk, preventing what could reasonably have been a second fatality.
 
-The two then repositioned using a suspended chain and continued firing on the remaining ritual participants and the [REDACTED:entity] emerging through [REDACTED:the aperture]. This brought Agent SHEPHERD into close proximity with the [REDACTED:anomaly]. A [REDACTED:tentacle-like appendage] reached through [REDACTED:the aperture], seized him, and pulled him through.
+The two then repositioned using a suspended chain and continued firing on the remaining ritual participants and on [REDACTED:whatever was on the other side] as it came through [REDACTED:the portal]. This brought Agent SHEPHERD into close proximity with it. [REDACTED:Something like a tentacle] reached through [REDACTED:the portal], seized him, and pulled him through.
 
 Status: missing, presumed killed in action. No remains recovered.
 
@@ -83,7 +83,7 @@ Agent BULWARK maintained an exceptionally aggressive focus on the primary object
 
 That focus produced results. He neutralized one ritual participant, activated the sprinkler system, and with Agent SHEPHERD neutralized the remaining two, directly ending the ritual.
 
-It also came at the expense of force protection. He declined my request for supporting fire while Agent WRAITH was pinned in close combat. Later, while I was withdrawing from two guards, he deployed a flashbang through [REDACTED:the aperture], apparently to test its effect on the [REDACTED:anomaly] rather than against the personnel pursuing me.
+It also came at the expense of force protection. He declined my request for supporting fire while Agent WRAITH was pinned in close combat. Later, while I was withdrawing from two guards, he deployed a flashbang through [REDACTED:the portal], apparently to test its effect on [REDACTED:whatever was on the other side] rather than against the personnel pursuing me.
 
 I do not question his commitment or his effectiveness against the primary threat. My concern is target fixation, and the point at which pursuit of the objective outweighs reasonable opportunities to protect other members of the unit.
 
@@ -119,7 +119,7 @@ I sustained a knife wound to the right arm, near the shoulder, while disarming a
 
 During withdrawal to the extraction point, Agent WRAITH and I were pursued by two hostile personnel. I fell. With rounds striking the surrounding machinery, I was hit in the left eye by a metal fragment and incapacitated. I have no reliable memory of what followed.
 
-I was not among the operators initially extracted. I do not know who recovered me or how. My next clear memory is waking in [REDACTED:an unmarked recovery room, no windows], where I was informed that the eye could not be saved and had been surgically removed. No one present was able or willing to tell me how I arrived there. I request that the extraction record be made available to me.
+I was not among the operators initially extracted. I do not know who recovered me or how. My next clear memory is waking in an unmarked recovery room, no windows, where I was informed that the eye could not be saved and had been surgically removed. No one present was able or willing to tell me how I arrived there. I request that the extraction record be made available to me.
 
 In the absence of that record, I can only consider the possibilities.
 
@@ -135,11 +135,11 @@ The stand-down period will be used to adapt: monocular retraining for clinical p
 
 ## 7. Paranormal Phenomena
 
-A portal-like [REDACTED:aperture] was present above the ritual area for the duration of the engagement. No [REDACTED:entity] fully emerged. Multiple [REDACTED:tentacle-like appendages] were observed extending through it. Their scale suggests the source was substantially larger than the [REDACTED:aperture].
+There was [REDACTED:what looked like an interdimensional portal] above the ritual area for the duration of the engagement. [REDACTED:Whatever was on the other side] did not fully emerge. Multiple [REDACTED:tentacles, or what functioned as tentacles,] were observed extending through it. Their scale suggests the source was substantially larger than the [REDACTED:portal].
 
-A flashbang deployed through the [REDACTED:aperture] did not detonate. There was no report and no light. It was not seen again.
+A flashbang deployed through the [REDACTED:portal] did not detonate. There was no report and no light. It was not seen again.
 
-The chanting was a Latin invocation with heretical and demonological content. Its purpose, to summon the [REDACTED:entity], was apparent to the unit only in retrospect. Exposure produced severe physiological effects in at least one operator (Section 4).
+The chanting was a Latin invocation with heretical and demonological content. Its purpose, to summon [REDACTED:the thing the chanting was calling], was apparent to the unit only in retrospect. Exposure produced severe physiological effects in at least one operator (Section 4).
 
 Recommendations:
 

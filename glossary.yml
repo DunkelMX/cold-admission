@@ -53,7 +53,7 @@ rules:
   - "Military register: clipped, declarative, no literary flourish. This is a report, not prose."
   - "Preserve every markdown structure exactly: heading levels and text positions, list markers, bold/italic, blank lines."
   - "Bare [REDACTED] markers: copy through byte-for-byte, always."
-  - "[REDACTED:text] markers: keep the marker shape exactly, and translate the text inside ONLY when it is a common noun (aperture, entity, appendage). NEVER translate a personal name, an organisation, or a codename — those stay verbatim."
+  - "[REDACTED:...] markers: copy the ENTIRE marker through byte-for-byte, including the text inside the colon. Do NOT translate it. A later mechanical step substitutes the Spanish from a fixed map, which is what keeps the wording identical across operations."
   - "Codenames (TRIAGE, SHEPHERD, BULWARK, CODEX, WRAITH) are never translated."
 
 banned:
@@ -85,12 +85,17 @@ never_translate:
 # Contents of [REDACTED:...] markers, substituted mechanically by translate.py after
 # translation. Anything not listed here is passed through verbatim — which is correct
 # for personal names, organisations and codenames, and is reported so it can be added.
+
+# Contents of [REDACTED:...] markers, substituted mechanically by translate.py after
+# translation. Anything not listed is passed through verbatim — correct for personal
+# names, organisations and codenames — and reported so it can be added.
 redaction_terms:
-  aperture: "abertura"
-  the aperture: "la abertura"
-  entity: "entidad"
-  anomalous entity: "entidad anómala"
-  anomaly: "anomalía"
-  tentacle-like appendage: "apéndice similar a un tentáculo"
-  tentacle-like appendages: "apéndices similares a tentáculos"
-  an unmarked recovery room, no windows: "una sala de recuperación sin identificar, sin ventanas"
+  what looked like an interdimensional portal: "lo que parecía un portal interdimensional"
+  the portal: "el portal"
+  portal: "portal"
+  the thing on the other side: "la cosa del otro lado"
+  whatever was on the other side: "aquello que estuviera del otro lado"
+  Whatever was on the other side: "Aquello que estuviera del otro lado"
+  the thing the chanting was calling: "la cosa que invocaban los cantos"
+  Something like a tentacle: "Algo parecido a un tentáculo"
+  "tentacles, or what functioned as tentacles,": "tentáculos, o lo que hacía las veces de tentáculos,"

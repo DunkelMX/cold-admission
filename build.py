@@ -25,7 +25,7 @@ DOCS = ROOT / "docs"
 LANGS = ["en", "es"]
 LANG_ATTR = {"en": "en", "es": "es-MX"}
 
-MD = markdown.Markdown(extensions=["tables", "attr_list", "sane_lists"])
+MD = markdown.Markdown(extensions=["tables", "attr_list", "sane_lists", "toc"])
 
 # [REDACTED:Justin] -> revealable bar; bare [REDACTED]/[REDACTADO] -> permanent bar.
 RE_REVEAL = re.compile(r"\[(?:REDACTED|REDACTADO):([^\]]+)\]")
@@ -48,9 +48,24 @@ def redact(html):
     return RE_BAR.sub('<span class="redacted"></span>', html)
 
 
+# "(Section 4)" / "(Sección 4)" — dead text on a page, so point them at the heading.
+RE_XREF = re.compile(r"\((Section|Secci\u00f3n)\s+(\d+)\)")
+RE_H2_NUM = re.compile(r'<h2 id="([^"]+)">\s*(\d+)\.')
+
+
+def linkify_sections(html):
+    ids = {num: hid for hid, num in RE_H2_NUM.findall(html)}
+    # A reference with no matching heading stays plain text rather than dead-linking.
+    return RE_XREF.sub(
+        lambda m: (f'(<a class="xref" href="#{ids[m.group(2)]}">{m.group(1)} {m.group(2)}</a>)'
+                   if m.group(2) in ids else m.group(0)),
+        html,
+    )
+
+
 def render_md(body):
     MD.reset()
-    return redact(MD.convert(body))
+    return linkify_sections(redact(MD.convert(body)))
 
 
 def load(path):
